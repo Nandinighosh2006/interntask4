@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing text color</title>
+</head>
+<style>
+    .button{
+        border-radius: 10px solid rgba(0, 0, 0, 0.932);
+        color: solid black;
+        background-color: rgb(247, 194, 5);
+        font-weight: bold;
+    }
+    .button:hover{
+        background-color: greenyellow;
+    }
+    body{
+        text-align: center;
+        place-items: center;
+    }
+    .reset{
+        border-radius: 5px solid rgba(208, 10, 252, 0.932);
+        color: solid rgb(249, 12, 194);
+        background-color: rgb(235, 6, 212);
+        font-weight: bold;
+        size: 10px;
+    }
+    .reset:hover{
+        background-color: red;
+    }
+</style>
+<body>
+    <h1 id="heading">Change My Color!</h1>
+
+<button onclick="document.getElementById('heading').style.color='red'" class="button">Red</button>
+<button onclick="document.getElementById('heading').style.color='blue'" class="button">Blue</button>
+<button onclick="document.getElementById('heading').style.color='green'" class="button">Green</button>
+<button onclick="document.getElementById('heading').style.color='yellow'" class="button">Yellow</button>
+<button onclick="document.getElementById('heading').style.color='black'" class="reset">Reset</button>
+
+</body>
+</html>
